@@ -1,0 +1,26 @@
+.sidebar-h4{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-link{
+  box-shadow: none;
+}
+ul.sidebar-list {
+  padding: 0em 1em 0em 2.3em;
+  margin: 0;
+  position: relative;
+}
+ul.sidebar-list li.sidebar-listitem {
+  margin: 0;
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;
+}
+ul.sidebar-list li.sidebar-listitem:before {
+  
+  font-family: "Font Awesome 5 Free";
+  content: "▶";/*アイコンの種類*/
+  position: absolute;
+  left : 1em;/*左端からのアイコンまでの距離*/
+  color: skyblue;/*アイコン色*/
+}

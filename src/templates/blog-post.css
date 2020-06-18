@@ -1,0 +1,18 @@
+.taglink{
+  padding: 0.1em 1em;
+  margin: 2em 0;
+  fontWeight: bold;
+  color: #6091d3;
+  background: #FFF;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+}
+.taglink:hover{
+  padding: 0.1em 1em;
+  margin: 2em 0;
+  fontWeight: bold;
+  color: #FFF;
+  background: #6091d3;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+}

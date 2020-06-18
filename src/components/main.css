@@ -1,0 +1,64 @@
+.main-flex{
+  width: 100%;
+}
+.main-flex{
+  width: 100%;
+}
+.main-Avatar{
+  width: 100%;
+}
+.main-Contents{
+  table-layout: fixed;
+  width: 100%;
+  height: auto;
+}
+.main-Left-Background{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 75%;
+  height: auto;
+  float: left;
+  color: #000;
+  background-color: #fff;
+}
+.main-Left{
+  margin-top: 64px;
+  margin-left: 128px;
+  margin-right: 12px;
+}
+.main-Right-Background{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 25%;
+  height: auto;
+  float: left;
+  color: #000;
+  background-color: #ddd;
+}
+.main-Right{
+  margin-top: 64px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+.main-Left-Background{
+  width: 100%;
+}
+.main-Right-Background{
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .main-Left{
+    margin-top: 64px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+

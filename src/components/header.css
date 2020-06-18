@@ -1,0 +1,351 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.site-header{
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+   width: 100%;
+   position: fixed;
+   z-index: 2147483647;
+}
+
+.menu-icon {
+   margin-top: 4px;
+}
+.menu-link {
+  box-shadow: none;
+}
+.menu {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 48px;
+    max-width: 2500px;
+    margin: 0 auto;
+    background: #1b2538; /* メニューバーの色 */
+}
+.menu > li {
+	margin-bottom: 0;
+    float: left;
+    height: 48px;
+    line-height: 49px;
+	padding: 1px 20px;
+}
+
+.menu__home > li a {
+    text-decoration: none; /* リンクに下線を付けない */
+    display: block;
+    color: #fff;
+}
+.menu__home > li a:hover {
+    text-decoration: none;
+    color: #999;
+}
+.menu__single > li a {
+    text-decoration: none; /* リンクに下線を付けない */
+    display: block;
+    color: #fff;
+}
+.menu__single > li a:hover {
+    text-decoration: none;
+    color: #999;
+}
+.menu__none > li a {
+    text-decoration: none; /* リンクに下線を付けない */
+    display: block;
+    color: #fff;
+}
+.menu__none > li a:hover {
+    text-decoration: none;
+    color: #999;
+}
+.menu__second-level > li a {
+    text-decoration: none; /* リンクに下線を付けない */
+    display: block;
+    color: #fff;
+}
+.menu__second-level > li a:hover {
+    text-decoration: none;
+    color: #999;
+}
+
+ul.menu__second-level {
+    top: 24px; /* システムメニュープルダウン位置Y */
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+.menu > li:hover {
+    color: #000;
+    background: #eee;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.menu__second-level li {
+    border-top: 1px solid #111;
+    margine: 0;
+    height: 18px;
+}
+.menu__second-level li a {
+    text-decoration: none; /* リンクに下線を付けない */
+    background: #1b2538; /* プルダウンメニューの色 */
+    padding: 0 40px;
+}
+.menu__second-level li a:hover {
+    text-decoration: none;
+}
+/* floatクリア */
+.menu:before,
+.menu:after {
+    content: " ";
+    display: table;
+}
+.menu:after {
+    clear: both;
+}
+.menu {
+    *zoom: 1;
+}
+
+
+.menu > li.menu__none {
+    position: relative;
+}
+li.menu__none {
+    position: relative;
+    background: #1b2538;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.menu__none:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.menu > li.menu__home {
+    position: relative;
+}
+li.menu__home {
+    position: relative;
+    background: #da3c41;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.menu__home:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu > li.menu__single {
+    position: relative;
+}
+li.menu__single ul.menu__second-level {
+    position: absolute;
+    left: -48px; /* システムメニュープルダウン位置X */
+    right: auto;
+    background: #072A24;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.menu__single:hover ul.menu__second-level {
+    top: 34px; /* システムメニュープルダウン位置Y */
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    height: 0;
+}
+
+.menu__right {
+    visibility: hidden;
+}
+.menu > li.menu__right {
+    position: relative;
+    float: right;  /* システムメニューは右端 */
+}
+li.menu__right ul.menu__second-level {
+    position: absolute;
+    left: auto; /* システムメニュープルダウン位置X */
+    right: -20px;
+    background: #072A24;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.menu__right:hover ul.menu__second-level {
+    top: 34px; /* システムメニュープルダウン位置Y */
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    height: 0;
+}
+
+#humberger {
+  top: 6px;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 4px;
+  background-color: #0f0;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+  top: 0;
+}
+#humberger div:nth-of-type(2) {
+  top: 10px;
+}
+#humberger div:nth-of-type(3) {
+  bottom: 0;
+}
+
+
+#nav_drawer {
+  position: relative;
+}
+
+.nav_unshown {
+  display: none;
+}
+
+#nav_open {
+  //margin: 18px 18px 0 0;
+  margin: 0;
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: ease .5s;
+}
+
+.navbar_toggle_icon {
+  position: relative;
+  display: block;
+  height: 4px;
+  width: 28px;
+  background: #0F0;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.navbar_toggle_icon:nth-child(1) {
+  top: 0;
+}
+
+.navbar_toggle_icon:nth-child(2) {
+  margin: 5px 0;
+}
+
+.navbar_toggle_icon:nth-child(3) {
+  top: 0;
+}
+
+#nav_close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: ease .5s;
+}
+
+#nav_content {
+  padding: 10px 20px;
+  overflow: auto;
+  position: fixed;
+  top: 1; /* メニューバーの高さ分 */
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  transition: ease .5s;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+#nav_input:checked ~ #nav_close {
+  display: block;
+  opacity: 0.7;
+}
+
+#nav_input:checked ~ #nav_content {
+  position: fixed;
+  transform: translateX(calc(100% - 360px));
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+#nav_input:checked ~ #nav_open {
+  //margin-right: 218px;
+}
+
+#nav_input:checked ~ #nav_open .navbar_toggle_icon {
+  z-index: 100;
+  background: #F00;
+}
+
+#nav_input:checked ~ #nav_open .navbar_toggle_icon:nth-child(1) {
+  top: 8.6px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav_input:checked ~ #nav_open .navbar_toggle_icon:nth-child(2) {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+#nav_input:checked ~ #nav_open .navbar_toggle_icon:nth-child(3) {
+  top: -8.6px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navbar_brand {
+  margin-top: 31px;
+}
+
+
+
+@media (max-width: 1000px) {
+  .navbar_brand {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar_brand {
+    margin-top: 16px;
+    width: 147px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .menu__right{
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu > li {
+    padding: 1px 2px;
+  }
+}
